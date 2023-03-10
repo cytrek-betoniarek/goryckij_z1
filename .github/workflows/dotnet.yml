@@ -21,8 +21,8 @@ jobs:
       with:
         dotnet-version: 6.0.x
     - name: Restore dependencies
-      run: dotnet restore
+      run: dotnet restore ./PwMini.TddWorkshop.CalculatorLibrary/PwMini.TddWorkshop.CalculatorLibrary/PwMini.TddWorkshop.CalculatorLibrary.csproj
     - name: Build
-      run: dotnet build --no-restore
+      run: dotnet build --no-restore ./PwMini.TddWorkshop.CalculatorLibrary/PwMini.TddWorkshop.CalculatorLibrary/PwMini.TddWorkshop.CalculatorLibrary.csproj
     - name: Test
-      run: dotnet test --no-build --verbosity normal
+      run: dotnet test --no-build --verbosity normal ./PwMini.TddWorkshop.CalculatorLibrary/PwMini.TddWorkshop.CalculatorLibraryTests/PwMini.TddWorkshop.CalculatorLibraryTests.csproj
